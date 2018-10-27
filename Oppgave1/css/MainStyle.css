@@ -1,18 +1,17 @@
-.header-element-container{
+.header-element-container {
     display: inline;
 }
 
-.header-logo{
+.header-logo {
     position: relative;
     float: left;
-    color: #FDA900;
+    color: #471921;
     font-size: 1.5rem;
     font-weight: bolder;
     padding: 1rem;
-    text-shadow: 2px 2px #2E1015;
 }
- 
-.header-img{
+
+.header-img {
     position: relative;
     float: right;
     width: 90px;
@@ -20,56 +19,97 @@
 }
 
 
-
-
-.container-product-area{
+.container-product-area {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
-    background-color: bisque;
-    margin: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 
-.product-element-container{
+.product-element-container {
     position: relative;
-    width: 200px;
-    height: 300px;
-    background-color: aliceblue;
+    width: 300px;
+    height: 450px;
     opacity: 0.8;
-    border-radius: 5%;
     margin: 20px;
     text-align: center;
-
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    border-color: #471921;
 }
 
-.product-img{
+.product-sale{
+    height: 40px;
+    width: 40px;
+}
+.product-img {
     top: 5%;
     margin: auto;
     display: block;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 70%;
 }
 
-.product-desc{
+.product-tit {
+    top: 5%;
+    padding: 1rem;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif'
+
+}
+
+.product-desc {
     top: 0.5%;
     position: relative;
     color: black;
     padding: 1rem;
 }
 
-.product-tit{
-    top: 5%;
-    padding: 1rem;
-    position: relative;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif'
-}
 
-.product-price{
+.product-price {
     top: 1%;
     position: relative;
+    padding: 0.5rem;
+}
+
+
+.product-heart{
+    position: relative;
+    height: 40px;
+    width: 45px;
+    float: left; 
+    margin-left: 15px;
+}
+
+.product-cart{
+    position: relative;
+    height: 45px;
+    width: 45px;
+    float: right; 
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: #471921;
+    margin-right: 15px;
+}
+
+.product-stockI{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    padding: 0.5rem; 
+    left: 30%;
+}
+
+.products-stockT{
+    position: absolute;
+    padding: 0.5rem;
+    display: inline;
+    left: 40%;
 }
