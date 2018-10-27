@@ -1,0 +1,75 @@
+.header-element-container{
+    display: inline;
+}
+
+.header-logo{
+    position: relative;
+    float: left;
+    color: #FDA900;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 1rem;
+    text-shadow: 2px 2px #2E1015;
+}
+ 
+.header-img{
+    position: relative;
+    float: right;
+    width: 90px;
+    padding: 0.5rem;
+}
+
+
+
+
+.container-product-area{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    background-color: bisque;
+    margin: auto;
+}
+
+
+
+.product-element-container{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-color: aliceblue;
+    opacity: 0.8;
+    border-radius: 5%;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.product-img{
+    top: 5%;
+    margin: auto;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.product-desc{
+    top: 0.5%;
+    position: relative;
+    color: black;
+    padding: 1rem;
+}
+
+.product-tit{
+    top: 5%;
+    padding: 1rem;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif'
+}
+
+.product-price{
+    top: 1%;
+    position: relative;
+}
