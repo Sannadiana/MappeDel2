@@ -1,4 +1,4 @@
-/****** HEADER ******/
+/****** HEADER ARRAY ******/
 let elements = ['LightUp', 'images/icones.png']
 
 
@@ -20,20 +20,9 @@ document.body.appendChild(element);
 
 
 
-/******* PRODUCTS ******/
+/******* PRODUCT ARRAY WITH OBJECTS AND ITS ELEMENTS ******/
 
 let products = [
-    {
-        title: 'KobberHouse',
-        price: '3999,-',
-        description: 'Asymmetric, Gold',
-        img: 'images/AsymmetricLampeskjerm-KobberHouse.jpg',
-        heartIcon: 'images/clipart-hollow-heart-png.jpeg',
-        cartIcon: 'images/COLOURBOX29626143.jpg',
-        inStockIcon: 'images/green-dott.png',
-        inStock: 'In Stock'
-    },
-
     {
         title: 'Pholc',
         price: '5999,-',
@@ -69,6 +58,17 @@ let products = [
         inStock: 'In Stock',
         saleS: ''
     },
+        {
+        title: 'KobberHouse',
+        price: '3999,-',
+        description: 'Asymmetric, Gold',
+        img: 'images/AsymmetricLampeskjerm-KobberHouse.jpg',
+        heartIcon: 'images/clipart-hollow-heart-png.jpeg',
+        cartIcon: 'images/COLOURBOX29626143.jpg',
+        inStockIcon: 'images/green-dott.png',
+        inStock: 'In Stock'
+    },
+    
     {
         title: 'Enigma',
         price: '8000,-',
@@ -84,11 +84,13 @@ let products = [
 
 
 
+/******* DECLARE INITIALIZE AND GENERATING HTML STRUCTURE FOR THE OBJECTS ELEMENTS ******/
 
 let container = document.createElement('div');
 container.classList.add('container-product-area');
 
 
+/******* LOOPING THROUGH THE ARRAY AND GIVE THE ELEMENTS HTML STRUCTURE AND CLASSES ******/
 
 for (let i = 0; i < products.length; i++) {
     let product = document.createElement('div');
@@ -116,6 +118,7 @@ for (let i = 0; i < products.length; i++) {
     stockT.classList.add('products-stockT');
     
 
+/******* INITIALIZE EACH ELEMENT VALUE ******/
     sale.src = products[i].saleS;
     img.src = products[i].img;
     tit.innerHTML = products[i].title;
