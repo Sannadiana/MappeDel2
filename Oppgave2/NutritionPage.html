@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NutritionPage</title>
+</head>
+
+<body>
+
+    <style>
+        #idea-txt {
+            /*border: none;*/
+            outline: none;
+        }
+    </style>
+    <!-- 
+               Brainstorming
+               *******
+               En app bestående av en tekstboks som man kan fylle ut, for deretter klikke på en knapp for å legge til ideen i en liste på nettsiden. 
+           -->
+
+    <div id="main-page-container">
+
+        <header>
+            <h1>Make an overview of food you plan at eating today </h1>
+            <h2>Add into the field down below</h2>
+        </header>
+
+        <main>
+
+            <section>
+                <label>Food option</label>
+                <input id="option-txt" type="text">
+                <input id="add-foodOption-btn" type="button" value="Add option">
+            </section>
+
+            <section>
+                <ul id="option-ul"></ul>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="scripts/NutritionPage.js"></script>
+
+
+</body>
+
+</html>
