@@ -17,4 +17,7 @@
         optionTxt.focus();
     }
 
+
+    /*Kanskje legge inn inspirasjons alternativer*/
+
 }())
