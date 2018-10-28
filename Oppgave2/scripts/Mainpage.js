@@ -20,15 +20,18 @@ function calculateBMI() {
     resultBMI.textContent = "Your Body mass index (BMI): " + calcBMI;
     resultBMIOutput.appendChild(resultBMI);
 
-    //let resultCategorie = document.createElement("h4");
-
-
-    //resultCategorie.appendChild(resultCategorie);
     for (const [categorie, value] of Object.entries(listBmiCategories)) {
         if (calcBMI <= value) {
             resultCategorie.textContent = "You fall into the categorie: " + categorie;
+            resultCategorie.appendChild(resultBMI);
+
+            weightInput.value = "";
+            weightInput.focus();
+
+            heightInput.value = "";
+            heightInput.focus();
             break;
         }
-
     }
+
 }
