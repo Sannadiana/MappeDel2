@@ -28,32 +28,32 @@
 
             <h1>Welcome to use your <br> personal training application </h1>
 
-            <h4>Fill in your weight and hight down below, <br> to calculate your body mass index </h4>
+            <div id="calculate">
+                <h4>Fill in your weight and hight down below, <br> to calculate your body mass index </h4>
 
-            <label for="weight">Your weight in kilo
+                <label for="weight">Your weight in kilo
             <input id="weightInput" type="weight">
             <br>
         </label>
 
-            <label for="hight"> Your hight in centimeters
+                <label for="hight"> Your hight in centimeters
             <input id="heightInput" type="text" name="hight">
-            <br>
-            <br>
+        </div>
         </label>
 
 
-            <button onclick="calculateBMI()" id="calculateBtn">Calculate</button>
+                <button onclick="calculateBMI()" id="calculateBtn">Calculate</button>
 
-            <h3 id="resultBMIOutput"></h3>
-            <h4 id="resultCategorie"></h4>
+                <h3 id="resultBMIOutput"></h3>
+                <h4 id="resultCategorie"></h4>
 
         </main>
 
 
 
-    </div>
-    <!-- end main-page-container -->
-    <script src="scripts/Mainpage.js"></script>
+        </div>
+        <!-- end main-page-container -->
+        <script src="scripts/Mainpage.js"></script>
 </body>
 
 </html>

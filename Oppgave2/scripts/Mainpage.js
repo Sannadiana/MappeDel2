@@ -17,10 +17,10 @@ logo.style.color;
 
 let nav = document.querySelector("#main-nav-menu");
 nav.style.float = "right";
-nav.style.border = "1px solid";
 nav.style.borderRadius = "2rem";
 nav.style.borderColor = "green";
-nav.style.padding = "1rem";
+nav.style.padding = "0.5rem";
+nav.style.color = ""
 
 let wel = document.getElementsByTagName("h1");
 let welcome = wel[0];
@@ -28,8 +28,8 @@ welcome.style.fontWeight = "bold";
 welcome.style.fontFamily = "Courier New";
 welcome.style.padding = "1rem";
 
-let welc = document.getElementsByTagName("h4");
-
+let welc = document.getElementById("calculate");
+welc.style.padding = "2rem";
 
 
 
@@ -43,7 +43,17 @@ for (const button of buttons) {
     button.style.color = "green";
     button.style.fontWeight = "bolder";
     button.style.borderColor = "green";
+    button.addEventListener("mouseenter", function() {
+        const temp = this.style.color
+        this.style.color = this.style.background
+        this.style.background = temp
+    })
 
+    button.addEventListener("mouseleave", function() {
+        const temp = this.style.color
+        this.style.color = this.style.background
+        this.style.background = temp
+    })
 }
 
 
