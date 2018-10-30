@@ -3,6 +3,22 @@
 
 //encapsulation
 (function() {
+        let header = document.querySelector("#main-page-header");
+        header.style.padding = "2rem";
+        header.style.fontWeight = "bold";
+        header.style.fontSize = "1rem";
+        header.style.weight = "100%";
+
+        let logo = document.querySelector("#logo");
+        logo.style.height = "40px";
+        logo.style.float = "left";
+        logo.style.color;
+
+        let nav = document.querySelector("#main-nav-menu");
+        nav.style.float = "right";
+        nav.style.borderRadius = "2rem";
+        nav.style.borderColor = "green";
+        nav.style.padding = "0.5rem";
 
         //HTML objects
         const setExerciseBtn = document.getElementById("set-exercise-btn");
@@ -49,9 +65,11 @@
             }
         ];
 
+        let main = document.querySelector("#main-page-container");
+        main.style.padding = "3rem";
+
         //events
         setExerciseBtn.onclick = setRandomExercise;
-
 
 
 

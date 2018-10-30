@@ -20,7 +20,6 @@ nav.style.float = "right";
 nav.style.borderRadius = "2rem";
 nav.style.borderColor = "green";
 nav.style.padding = "0.5rem";
-nav.style.color = ""
 
 let wel = document.getElementsByTagName("h1");
 let welcome = wel[0];
