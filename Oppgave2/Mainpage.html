@@ -12,49 +12,47 @@
 
 <body>
 
-    <header>
-        <h1>Welcome to use</h1>
-        <h2>your personal training application </h2>
-    </header>
 
-    <main>
+    <div id="main-page-container">
 
-        <nav>
-            <a href="TrainingPage.html">
-                <button>Training plan</button>
-            </a>
+        <header id="main-page-header">
+            <img id="logo" src="images/weTrain.png" alt="graphic we train logo. graphic">
+            <nav id="main-nav-menu">
+                <a href="TrainingPage.html">TrainingPlan</a>
+                <a href="NutritionPage.html">Nutrition</a>
+            </nav>
+        </header>
+        <!-- end main-page-header -->
 
-            <a href="NutritionPage.html">
-                <button>Nutrition</button>
-            </a>
-        </nav>
+        <main id="main-page-content">
 
-        <h4>Fill in your weight and hight down below, <br> to calculate your body mass index </h4>
+            <h1>Welcome to use your <br> personal training application </h1>
 
-        <label for="weight">Your weight in kilo
+            <h4>Fill in your weight and hight down below, <br> to calculate your body mass index </h4>
+
+            <label for="weight">Your weight in kilo
             <input id="weightInput" type="weight">
             <br>
         </label>
 
-        <label for="hight"> Your hight in centimeters
+            <label for="hight"> Your hight in centimeters
             <input id="heightInput" type="text" name="hight">
             <br>
             <br>
         </label>
 
 
-        <button onclick="calculateBMI()" id="calculateBtn">Calculate</button>
+            <button onclick="calculateBMI()" id="calculateBtn">Calculate</button>
 
-        <h3 id="resultBMIOutput"></h3>
-        <h4 id="resultCategorie"></h4>
+            <h3 id="resultBMIOutput"></h3>
+            <h4 id="resultCategorie"></h4>
 
-
-
-    </main>
+        </main>
 
 
 
-
+    </div>
+    <!-- end main-page-container -->
     <script src="scripts/Mainpage.js"></script>
 </body>
 

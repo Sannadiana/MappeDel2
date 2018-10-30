@@ -22,8 +22,7 @@ document.body.appendChild(element);
 
 /******* PRODUCT ARRAY WITH OBJECTS AND ITS ELEMENTS ******/
 
-let products = [
-    {
+let products = [{
         title: 'Pholc',
         price: '5999,-',
         description: 'Mobil5 Black',
@@ -58,7 +57,7 @@ let products = [
         inStock: 'In Stock',
         saleS: ''
     },
-        {
+    {
         title: 'KobberHouse',
         price: '3999,-',
         description: 'Asymmetric, Gold',
@@ -66,9 +65,10 @@ let products = [
         heartIcon: 'images/clipart-hollow-heart-png.jpeg',
         cartIcon: 'images/COLOURBOX29626143.jpg',
         inStockIcon: 'images/green-dott.png',
-        inStock: 'In Stock'
+        inStock: 'In Stock',
+        saleS: 'images/sale.png'
     },
-    
+
     {
         title: 'Enigma',
         price: '8000,-',
@@ -103,8 +103,8 @@ for (let i = 0; i < products.length; i++) {
     let cart = document.createElement('img');
     let stockI = document.createElement('img');
     let stockT = document.createElement('p');
-    
-    
+
+
 
     product.classList.add('product-element-container');
     sale.classList.add('product-sale');
@@ -116,10 +116,16 @@ for (let i = 0; i < products.length; i++) {
     cart.classList.add('product-cart');
     stockI.classList.add('product-stockI');
     stockT.classList.add('products-stockT');
-    
 
-/******* INITIALIZE EACH ELEMENT VALUE ******/
+
+    /******* INITIALIZE EACH ELEMENT VALUE ******/
+
+
+
     sale.src = products[i].saleS;
+    if (products[i].saleS == '') {
+        sale.style.display = 'none';
+    }
     img.src = products[i].img;
     tit.innerHTML = products[i].title;
     desc.innerHTML = products[i].description;
