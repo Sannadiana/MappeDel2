@@ -19,6 +19,21 @@
     const addFoodOptionBtn = document.getElementById("add-foodOption-btn");
     const optionUl = document.getElementById("option-ul");
 
+    let main = document.querySelector("#main-page-container");
+    main.style.padding = "3rem";
+
+    let txts = document.querySelectorAll("h1,h2");
+    for (const txt of txts) {
+        txt.style.borderRadius = "3rem";
+        txt.style.color = "green";
+        txt.style.fontSize = "1rem";
+        txt.style.fontWeight = "bolder";
+        txt.style.borderColor = "green";
+    }
+
+
+
+
     addFoodOptionBtn.onclick = addOption;
 
     optionTxt.focus();
